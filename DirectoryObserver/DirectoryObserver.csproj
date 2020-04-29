@@ -9,4 +9,10 @@
     <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
     <PackageReference Include="ReactiveProperty" Version="6.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Windows">
+      <HintPath>C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
 </Project>
