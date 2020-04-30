@@ -38,7 +38,7 @@ namespace DirectoryObserver.ViewModels
                         WatcherChangeTypes.Created => "が作られたよ",
                         WatcherChangeTypes.Deleted => "が削除されたよ",
                         WatcherChangeTypes.Changed => "が変更されたよ",
-                        WatcherChangeTypes.Renamed => "が改名したよ",
+                        WatcherChangeTypes.Renamed => "が改名されたよ",
                         _ => "になんかあったよ"
                     })
                     .ToString())
