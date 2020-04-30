@@ -3,7 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Height="350" Width="525" >
-    <Grid>
-    </Grid>
+        Height="0" Width="0"
+        ShowInTaskbar="False"
+        WindowState="Minimized"
+        Opacity="0"
+        AllowsTransparency="True"
+        WindowStyle="None">
 </Window>
