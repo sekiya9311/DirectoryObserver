@@ -4,8 +4,10 @@ using System.Text;
 
 namespace DirectoryObserver.Models.Interfaces
 {
-    public interface IToaster
+    public interface INotifier
     {
-        void Toast(string title, string message, Action activated);
+        event EventHandler ToastClicked;
+
+        void Toast(string title, string message);
     }
 }

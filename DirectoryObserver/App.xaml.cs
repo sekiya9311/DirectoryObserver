@@ -20,7 +20,7 @@ namespace DirectoryObserver
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry
-                .RegisterSingleton<IToaster, Toaster>()
+                .Register<INotifier, Notifier>()
                 .RegisterSingleton<IDirectoryWatcher, DirectoryWatcher>()
                 .RegisterSingleton<IDirectoryOpener, DirectoryOpener>()
                 .RegisterSingleton<IFilePathInquirer, FilePathInquirer>();

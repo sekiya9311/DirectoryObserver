@@ -10,13 +10,13 @@ namespace DirectoryObserver.ViewModels
     public class MainWindowViewModel : BindableBase
     {
         private readonly IDirectoryWatcher _watcher;
-        private readonly IToaster _toaster;
+        private readonly INotifier _toaster;
         private readonly IDirectoryOpener _opener;
         private readonly IFilePathInquirer _filePathInquirer;
 
         public MainWindowViewModel(
             IDirectoryWatcher watcher,
-            IToaster toaster,
+            INotifier toaster,
             IDirectoryOpener opener,
             IFilePathInquirer filePathInquirer)
         {
@@ -44,11 +44,12 @@ namespace DirectoryObserver.ViewModels
                     .ToString())
                 .Subscribe(msg =>
                 {
-                    _toaster.Toast(
-                        "DirectoryObserver",
-                        msg,
-                        () => _opener.Open(_watcher.Path));
+                    _toaster
+                        .Toast("DirectoryObserver", msg);
                 });
+
+            _toaster.ToastClicked
+                += (s, e) => _opener.Open(_watcher.Path);
         }
     }
 }
