@@ -34,6 +34,7 @@ namespace DirectoryObserver.Models.Impls
             var imgPath = Path.Combine(
                 executeDirPath,
                 "Resources",
+                "MaterialIcons",
                 "baseline_folder_open_white_48dp.ico"
             );
 

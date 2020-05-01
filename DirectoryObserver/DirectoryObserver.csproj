@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyName>DirectoryObserver</AssemblyName>
-    <ApplicationIcon>Resources\baseline_folder_open_black_48dp.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\MaterialIcons\baseline_folder_open_black_48dp.ico</ApplicationIcon>
     <Company />
     <Product />
     <Authors>sekiya9311</Authors>
@@ -23,7 +23,7 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Resources\baseline_folder_open_white_48dp.ico">
+    <None Update="Resources\MaterialIcons\baseline_folder_open_white_48dp.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
