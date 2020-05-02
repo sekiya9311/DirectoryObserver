@@ -1,6 +1,6 @@
 ﻿using DirectoryObserver.Models.Interfaces;
+using System.Diagnostics;
 using System.IO;
-using Windows.System;
 
 namespace DirectoryObserver.Models.Impls
 {
@@ -11,7 +11,11 @@ namespace DirectoryObserver.Models.Impls
             if (!Directory.Exists(directory))
                 throw new DirectoryNotFoundException();
 
-            _ = Launcher.LaunchFolderPathAsync(directory);
+            
+            Process.Start(new ProcessStartInfo(directory)
+            {
+                UseShellExecute = true
+            });
         }
     }
 }
