@@ -1,9 +1,5 @@
 ﻿using DirectoryObserver.Models.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Text;
 using Windows.System;
 
 namespace DirectoryObserver.Models.Impls

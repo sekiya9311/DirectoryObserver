@@ -18,6 +18,7 @@ namespace DirectoryObserver.Models.Impls
                 _watcher.EnableRaisingEvents = !string.IsNullOrEmpty(value);
             }
         }
+
         public string Filter
         {
             get => _watcher.Filter;

@@ -1,9 +1,8 @@
-﻿using Prism.Ioc;
-using DirectoryObserver.Views;
-using System.Windows;
-using DirectoryObserver.Models;
+﻿using DirectoryObserver.Models.Impls;
 using DirectoryObserver.Models.Interfaces;
-using DirectoryObserver.Models.Impls;
+using DirectoryObserver.Views;
+using Prism.Ioc;
+using System.Windows;
 
 namespace DirectoryObserver
 {

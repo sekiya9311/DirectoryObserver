@@ -1,5 +1,4 @@
-﻿
-using DirectoryObserver.Models.Interfaces;
+﻿using DirectoryObserver.Models.Interfaces;
 
 namespace DirectoryObserver.Models.Impls
 {

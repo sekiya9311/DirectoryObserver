@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DirectoryObserver.Models.Interfaces
+﻿namespace DirectoryObserver.Models.Interfaces
 {
     public interface IDirectoryOpener
     {

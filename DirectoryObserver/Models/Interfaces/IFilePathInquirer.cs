@@ -1,5 +1,4 @@
-﻿
-namespace DirectoryObserver.Models.Interfaces
+﻿namespace DirectoryObserver.Models.Interfaces
 {
     public interface IFilePathInquirer
     {
