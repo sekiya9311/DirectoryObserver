@@ -11,7 +11,6 @@ namespace DirectoryObserver.Models.Impls
             if (!Directory.Exists(directory))
                 throw new DirectoryNotFoundException();
 
-            
             Process.Start(new ProcessStartInfo(directory)
             {
                 UseShellExecute = true
